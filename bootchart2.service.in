@@ -14,7 +14,7 @@ Before=basic.target shutdown.target
 
 [Service]
 Type=notify
-ExecStart=@EARLY_PREFIX@/sbin/@PROGRAM_PREFIX@bootchartd@PROGRAM_SUFFIX@ start
+ExecStart=@EARLY_PREFIX@/sbin/@PROGRAM_PREFIX@bootchartd@PROGRAM_SUFFIX@ --output-dir /tmp start
 RemainAfterExit=yes
 
 [Install]
